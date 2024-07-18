@@ -1,0 +1,111 @@
+.productReviewsContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  min-height: 100vh;
+}
+
+.productReviewsForm {
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 3vmax;
+  background-color: white;
+}
+
+.productReviewsFormHeading {
+  color: rgba(0, 0, 0, 0.733);
+  font: 300 2rem "Roboto";
+  text-align: center;
+}
+
+.productReviewsForm>div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.productReviewsForm>div>input {
+  padding: 1vmax 4vmax;
+  padding-right: 3vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+
+.productReviewsForm>div>svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.tableContainer {
+  width: 100%;
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .productReviewsContainer {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.158);
+  }
+
+  .productReviewsForm>div>input {
+    padding: 2vmax 4vmax;
+    font-size: 0.8rem;
+  }
+
+  .productReviewsForm>div>svg {
+    font-size: 1.2rem;
+  }
+
+  .tableContainer {
+    overflow-x: auto;
+  }
+}
+
+/* Adjustments for Material-UI Table components */
+
+.MuiTable-root .MuiTableHead-root .MuiTableRow-root .MuiTableCell-root {
+  font-weight: bold;
+}
+
+.MuiTable-root .MuiTableBody-root .MuiTableRow-root .MuiTableCell-root {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .productReviewsContainer {
+    margin-left: 0;
+    overflow-x: auto;
+  }
+
+  .productReviewsFormHeading {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Additional classes for color styling */
+.greenColor {
+  color: green;
+}
+
+.redColor {
+  color: red;
+}
