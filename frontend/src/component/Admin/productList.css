@@ -1,0 +1,190 @@
+.productListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#productListHeading {
+  font: 400 2rem "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.637);
+  transition: all 0.5s;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.productListTable {
+  background-color: white;
+  border: none !important;
+  width: 100%;
+}
+
+.productListTable div {
+  font: 300 1vmax "Roboto";
+  color: rgba(0, 0, 0, 0.678);
+  border: none !important;
+}
+
+.productListTable a,
+.productListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.productListTable a:hover {
+  color: tomato;
+}
+
+.productListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiToolbar-root .MuiDataGrid-footerContainer {
+  display: none;
+}
+
+.MuiDataGrid-footerContainer {
+  display: none;
+
+}
+
+@media screen and (max-width: 600px) {
+  .productListTable div {
+    font-size: 6vw;
+  }
+
+  #productListHeading {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+}
+
+/* Default styles */
+.dashboard {
+  display: flex;
+  
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+}
+
+
+/* Styles for filters */
+.filtersContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; 
+  padding: 10px; 
+}
+
+.filterControl {
+  margin-right: 10px;
+}
+
+.minAmount,
+.maxAmount {
+  width: 120px; 
+}
+
+@media screen and (max-width: 768px) {
+  .filtersContainer {
+    flex-direction: column;
+    border: 1px solid #ccc; 
+    padding: 10px; 
+  }
+
+  .filterControl {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%; 
+  }
+
+  .minAmount,
+  .maxAmount {
+    width: 100%; 
+  }
+}
+
+/* Responsive table */
+.productListTable {
+  width: 100%;
+  border: 1px solid #ccc; 
+  border-collapse: collapse; 
+}
+
+/* Pagination controls */
+.paginationControls {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc; 
+  padding: 10px; 
+}
+
+@media (max-width: 768px) {
+  .paginationControls {
+    border: 1px solid #ccc; 
+    padding: 10px;
+  }
+}
+
+
+.tableContainer {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.productListTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productListTable th,
+.productListTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.productListTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.statusCell.greenColor {
+  color: green;
+}
+
+.statusCell.redColor {
+  color: red;
+}
+
+.filtersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filterControl {
+  min-width: 150px;
+}
+
+.paginationControls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
