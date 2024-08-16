@@ -1,10 +1,10 @@
 import react from "react";
 
-const About = () = > {
+const about = () = > {
 return(
 
   <h1>About js<h1>
 )
   
 }
-  export default About
+  export default about
