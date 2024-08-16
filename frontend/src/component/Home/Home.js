@@ -7,7 +7,7 @@ import { clearErrors, getProduct } from "../../actions/productAction.js";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from '../layout/Loader/Loader.js';
 import { useAlert } from 'react-alert';
-import about from '/component/Home.js';
+import about from '/component/about.js';
 
 const Home = () => {
     const alert = useAlert();
