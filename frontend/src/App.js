@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import webFont from "webfontloader";
 import Home from "./component/Home/Home";
 import ProductDetails from './component/Product/ProductDetails';
+import about from './component/about.js'
 import Products from "./component/Product/Products";
 import Search from "./component/Product/Search";
 import LoginSignUp from './component/User/LoginSignUp';
@@ -92,6 +93,7 @@ function App() {
       {isAuthenticated && <UserOptions user={user} />}
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path = 'about1' element={<about/>}/>
         <Route path='/product/:id' element={<ProductDetails />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/about' element={<About />} />
